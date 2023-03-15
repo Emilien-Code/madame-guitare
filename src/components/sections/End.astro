@@ -1,0 +1,33 @@
+---
+import bgWebp from "../../assets/images/end/bg.webp";
+import bgPng from "../../assets/images/end/bg.jpg"
+
+
+import rockJpg from "../../assets/images/transition/rock.png"
+import rockWebp from "../../assets/images/transition/rock.webp"
+import insecteWEBP from "../../assets/images/end/insecte_3.webp"
+import insectePNG from "../../assets/images/end/insecte_3.png"
+
+
+
+
+
+import poster from "../../assets/images/poster.png"
+
+
+
+
+import Picture from "../atoms/Picture/Picture";
+
+import "../../assets/styles/components/sections/end.scss"
+---
+
+<section class="emi-end">
+    <Picture refClass="decore"images={[bgPng, bgPng, bgWebp, bgWebp ]} poster={poster} lazy={true} alt="background "  client:load />
+    <Picture speed={-0.1} parallax={true}  refClass="front-cavern2" images={[rockJpg, rockJpg, rockWebp, rockWebp ]} poster={poster} lazy={true} alt="background "  client:load />
+
+    <Picture scale={0.5} speed={-0.05} parallax={true} refClass="insect-1" images={[insectePNG, insectePNG, insecteWEBP, insecteWEBP ]} poster={poster} lazy={true} alt="background "  client:load />
+    <Picture scale={1} speed={-0.15} parallax={true} refClass="insect-2" images={[insectePNG, insectePNG, insecteWEBP, insecteWEBP ]} poster={poster} lazy={true} alt="background "  client:load />
+    <Picture scale={0.75} speed={-0.1} parallax={true} refClass="insect-3" images={[insectePNG, insectePNG, insecteWEBP, insecteWEBP ]} poster={poster} lazy={true} alt="background "  client:load />
+    <Picture scale={0.5} speed={-0.05} parallax={true} refClass="insect-4" images={[insectePNG, insectePNG, insecteWEBP, insecteWEBP ]} poster={poster} lazy={true} alt="background "  client:load />
+</section>

@@ -1,0 +1,153 @@
+---
+import bgWebp from "../../assets/images/forest/bg.webp";
+import bgPng from "../../assets/images/forest/bg.jpg"
+
+import middleTreeWebp from "../../assets/images/forest/midle_tree.webp";
+import middleTreePng from "../../assets/images/forest/midle_tree.png"
+
+import lightsWebp from "../../assets/images/forest/lights.webp";
+import lightsPng from "../../assets/images/forest/lights.png"
+
+import poster from "../../assets/images/poster.png"
+
+import leftTreeWebp from "../../assets/images/forest/left_tree.webp";
+import leftTreePng from "../../assets/images/forest/left_tree.png"
+
+import birdWebp from "../../assets/images/forest/Bird.webp";
+import birdPng from "../../assets/images/forest/Bird.png"
+
+import butterflyWebp from "../../assets/images/forest/butterfly.webp";
+import butterflyPng from "../../assets/images/forest/butterfly.png"
+
+
+import Picture from "../atoms/Picture/Picture";
+
+import "../../assets/styles/components/sections/forest.scss"
+---
+
+<section class="emi-forest">
+    <Picture refClass="decore" images={[bgPng, bgPng, bgWebp, bgWebp ]} poster={poster} lazy={true} alt="background "  client:load />
+
+    <Picture refClass="bird-1" images={[birdPng, birdPng, birdWebp, birdWebp ]} poster={poster} lazy={true} alt="background "  
+    speed={0.1}
+    scale={1.5}
+    parallax={true}
+    client:load />
+    <Picture refClass="bird-2" images={[birdPng, birdPng, birdWebp, birdWebp ]} poster={poster} lazy={true} alt="background "  
+    speed={0.25 / 2}
+    speedY={0.02}
+    scale={1}
+    parallax={true}
+    client:load />
+    <Picture refClass="bird-3" images={[birdPng, birdPng, birdWebp, birdWebp ]} poster={poster} lazy={true} alt="background "  
+    speed={0.15}
+    scale={1.4}
+    parallax={true}
+    client:load />
+
+    <Picture refClass="bird-4" images={[birdPng, birdPng, birdWebp, birdWebp ]} poster={poster} lazy={true} alt="background "  
+    speed={0.25 / 2}
+    scale={1.4}
+    parallax={true}
+    client:load />
+
+
+
+    <Picture refClass="bf-1" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background "  
+    speed={0.1}
+    speedY={-0.02}
+    scale={1}
+    parallax={true}
+    client:load />
+    <Picture refClass="bf-2" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background "  
+    speedY={-0.05}
+    speed={0.15 / 2}
+    scale={1.1}
+    parallax={true}
+    client:load />
+    
+    <Picture refClass="bf-3" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background "  
+    speedY={-0.02}
+    speed={0.25 / 2}
+    rotate={-180}
+    scale={1.2}
+    parallax={true}
+    client:load />
+    
+    <!-- water tree -->
+    <Picture refClass="bf-4" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background "  
+    speedY={0.05}
+    speed={0.15 /2}
+    scale={1.1}
+    parallax={true}
+    client:load />
+
+
+    <Picture refClass="bird-5" images={[birdPng, birdPng, birdWebp, birdWebp ]} poster={poster} lazy={true} alt="background "  
+    speed={0.15}
+    rotate={180}
+    scale={1.2}
+    parallax={true}
+    client:load />
+
+
+    <Picture refClass="decore water-tree" images={[middleTreePng, middleTreePng, middleTreeWebp, middleTreeWebp ]} poster={poster} lazy={true} alt="background "  client:load 
+    speed={-0.05}
+    parallax={true}/>
+    <Picture refClass="decore lights" images={[lightsPng, lightsPng, lightsWebp, lightsWebp ]} poster={poster} lazy={true} alt="background " 
+    speed={-0.05}
+    parallax={true}
+     client:load />
+
+
+     <!-- FIN oiseaux -->
+     <Picture refClass="bird-6" images={[birdPng, birdPng, birdWebp, birdWebp ]} poster={poster} lazy={true} alt="background "  
+     speed={0.25 /2}
+     scale={1.6}
+     speedY={0.05 /2}
+     parallax={true}
+     client:load />
+     <Picture refClass="bird-7" images={[birdPng, birdPng, birdWebp, birdWebp ]} poster={poster} lazy={true} alt="background "  
+     speed={0.1 / 2}
+     speedY={-0.05 /2}
+     rotate={180}
+     scale={1.5}
+     parallax={true}
+     client:load />
+     
+
+
+
+     
+    <Picture refClass="decore" images={[leftTreePng, leftTreePng, leftTreeWebp, leftTreeWebp ]} poster={poster} lazy={true} alt="background "  
+    speed={-0.15}
+    parallax={true}
+    client:load />
+
+    <!-- devant l'arbre -->
+    <Picture refClass="bird-8" images={[birdPng, birdPng, birdWebp, birdWebp ]} poster={poster} lazy={true} alt="background "  
+    speed={0.25 }
+    rotate={180}
+    scale={1.5}
+    parallax={true}
+    client:load />
+
+
+    <!-- BISOUS -->
+    <Picture refClass="bf-5" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background "  
+    speedY={0.05}
+    speed={0.1}
+    scale={1}
+    rotate={180}
+    parallax={true}
+    client:load />
+    <Picture refClass="bf-6" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background "  
+    speedY={0.05}
+    speed={0.15}
+    scale={1.2}
+    rotate={0}
+    parallax={true}
+    client:load />
+
+
+</section>

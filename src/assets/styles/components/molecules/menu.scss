@@ -1,0 +1,90 @@
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &:before{
+        content: "";
+        display: block;
+        position: fixed;
+        top: 24px;
+        right:24px;      
+        
+        background-color: #00000000;
+        backdrop-filter: blur(7px);
+        transform: translate(50%, -50%);
+        
+        height: 37px;
+        width: 37px;
+        
+        border-radius: 50%;
+        
+        
+        transition : 1s;  
+        transition-timing-function: cubic-bezier(.6,0,.48,1);
+  
+    }
+    
+    &.open{
+        width: 100vw;
+        height: 100vh;
+        &::before{
+            content: "";
+            display: block;
+            position: fixed;    
+            
+            background-color: #000000DA;
+            transform: translate(50%, -50%);
+            backdrop-filter: blur(7px);
+            
+            width: 500vh;
+            height: 500vh;
+
+            border-radius: 50%;
+           
+            transition :  1s;    
+            transition-timing-function: cubic-bezier(.6,0,.48,1);
+
+        }
+    }
+    .link{
+        margin-bottom: 64px;
+        opacity: 0;
+        font-family: "Tan-Pearl";
+        color: #ffffff;
+        font-size: 32px;
+        transform: translateX(10px);
+        z-index: 100;
+        
+        &.open{
+            position: relative;
+            // transform: translateX(0px);
+            // opacity: 1;
+            &:nth-of-type(1){
+                transition-duration: 0.3s;
+                // transition-delay: 0.3s;
+                transition-timing-function: cubic-bezier(.6,0,.48,1);
+            }
+            &:nth-of-type(2){
+                transition-duration: 0.3s;
+                // transition-delay: 0.4s;
+                transition-timing-function: cubic-bezier(.6,0,.48,1);
+            }
+            &:nth-of-type(3){
+                transition-duration: 0.3s;
+                // transition-delay: 0.5s;
+                transition-timing-function: cubic-bezier(.6,0,.48,1);
+            }
+            &:nth-of-type(4){
+                transition-duration: 0.3s;
+                // transition-delay: 0.6s;
+                transition-timing-function: cubic-bezier(.6,0,.48,1);
+            }
+        }
+    }
+}
+

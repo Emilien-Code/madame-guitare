@@ -1,0 +1,103 @@
+---
+import Layout from '../components/layouts/Layout.astro';
+import Picture from "../components/atoms/Picture/Picture";
+import branch1Webp from "../assets/images/qui-suis-je/branch-start.webp"
+import branch1Jpg from "../assets/images/qui-suis-je/branch-start.jpg"
+import leftBranchPng from "../assets/images/qui-suis-je/left-branch.png"
+import leftBranchWebp from "../assets/images/qui-suis-je/left-branch.webp"
+import rightBranchPng from "../assets/images/qui-suis-je/right-branch.png"
+import rightBranchWebp from "../assets/images/qui-suis-je/right-branch.webp"
+import bigBranchPng from "../assets/images/qui-suis-je/big_Branch.png"
+import bigBranchWebp from "../assets/images/qui-suis-je/big_Branch.webp"
+
+import poster from "../assets/images/poster.png"
+import "../assets/styles/pages/qui-suis-je.scss"
+---
+
+<Layout 
+	title="Madame Guitare" 
+	description=""
+	isHorizontal={false}
+>
+	<main class="emi-index-main">
+		<div class="scroll-container">
+			<main>
+				<section class="Marie_Doerler">
+
+					<h1>Marie Doerler</h1>
+					<Picture 
+						parallax={true}
+						speedY={-0.5}
+						rotate={0.015}
+						isRotateAnimated={true}
+						refClass="branch1" images={[branch1Jpg, branch1Jpg, branch1Webp, branch1Webp]} alt="background" client:load/>
+
+				</section>
+				<section class="Apprendre_et_transmettre">
+
+					<h2>Apprendre et transmettre</h2>
+					<p>Attirée par la musique depuis le plus jeune âge, j'ai grandi dans une famille de musiciens et j'ai été sensibilisée très tôt à toutes sortes d'expériences sonores et culturelles (concerts, opéras, fanfares etc)...</p>
+					<p>A l'âge de 5 ans, je débute une collection de boîtes à musique, cela me passionne. Je commence également à jouer du piano et de la flûte à bec.</p>
+
+				</section>
+				<section class="ado">
+					<Picture 
+					parallax={true}
+					speedY={-0.25}
+					rotate={-0.009}
+					isRotateAnimated={true}
+					refClass="branchLeft" images={[leftBranchPng, leftBranchPng, leftBranchWebp, leftBranchWebp]} alt="background" client:load/>
+					<p>Adolescente, j'apprends à jouer de la guitare chez les Scouts, elle ne me quittera plus.</p>
+					<Picture 
+					parallax={true}
+					speedY={-0.35}
+					rotate={-0.009}
+					isRotateAnimated={true}
+					refClass="branchRight" images={[rightBranchPng, rightBranchPng, rightBranchWebp, rightBranchWebp]} alt="background" client:load/>
+				</section>
+				<section class="diplome">
+					<p>En 2000 j’obtiens le diplôme d'état d’éducateur de Jeunes Enfants à l'IRTS de Metz. Je travaille dans diverses structures, multi-accueil, ludothèque, pouponnière, Lieu d'Accueil Enfants Parents où j' exerce différentes fonctions. Partout je chante, transmets, et me nourris sans cesse des chansons et des comptines des personnes rencontrées.</p>
+					<Picture 
+					parallax={true}
+					speedY={-0.25}
+					rotate={-0.009}
+					isRotateAnimated={true}
+					refClass="branchLeft" images={[leftBranchPng, leftBranchPng, leftBranchWebp, leftBranchWebp]} alt="background" client:load/>
+				</section>
+				<section class="emotions">
+					<p>En 2019, convaincue que la capacité d'écoute des enfants et l'expression de leurs émotions peuvent être développées dès le plus jeune âge par le biais de la musique, je décide de créer ma petite entreprise. : Madame Guitare et ses petites histoires voit le jour.</p>
+					<Picture 
+					parallax={true}
+					speedY={-0.35}
+					rotate={-180}
+					refClass="branchLeft" images={[leftBranchPng, leftBranchPng, leftBranchWebp, leftBranchWebp]} alt="background" client:load/>
+				</section>
+				<section class="formee">
+					<p>Initialement formée par l’Association pour le Développement de l’Éveil Musical (ADEM), association régie par la loi du 1er Juillet 1901 et agréé Jeunesse et Sport, j'ai poursuivi ma formation via le Centre National de la Fonction Publique Territoriale (CNFPT) et l'association Enfance et Musique.					</p>
+				</section>
+				<section class="formations">
+					<Picture 
+					parallax={true}
+					speedY={-0.25}
+					rotate={-180}
+					refClass="branchRight" images={[rightBranchPng, rightBranchPng, rightBranchWebp, rightBranchWebp]} alt="background" client:load/>
+					<p>Lors de ces formations nous avons abordé des thèmes tels que La musique et les tous petits, chansons et jeux vocaux pour les enfants, éveil corporel, danses du monde, rythmes et percussion du monde, musique du monde et pédagogie, rythme et percussion dans l'éveil musical du tout petit...mais aussi formation au Ukubébé par le biais « Du chant des Lunes ».</p>
+				</section>
+				<section class="apprendre_et_transmettre">
+					<p>Aujourd'hui je continue à apprendre et à transmettre.
+						Cela me permet d'intégrer et développer mon action en faveur de l'éveil artistique et culturel du jeune enfant.</p>
+					</section>
+					<section class="bigbranch">
+						<Picture 
+						parallax={true}
+						speedY={-0.25}
+						rotate={-0.002}
+						isRotateAnimated={true}
+						refClass="big_branch" images={[bigBranchPng, bigBranchPng, bigBranchWebp, bigBranchWebp]} alt="background" client:load/>
+						<p>Mon univers est un univers poétique, drôle et doux, mêlant des instruments de musique existants avec d'autres entièrement inventés en veillant toujours à leur bonne capacité sonore. J'aime embarquer avec moi les équipes d'adultes et les groupes d'enfants dans un paysage imaginaire pour pouvoir les faire rêver...</p>
+					</section>
+			</main>
+
+		</div>
+	</main>
+</Layout>

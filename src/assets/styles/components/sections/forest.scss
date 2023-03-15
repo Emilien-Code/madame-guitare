@@ -1,0 +1,89 @@
+.emi-forest{
+    height: 100vh;
+    width: 700vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    .emi-img-render{
+        position: absolute;
+        &.decore{
+            top: 0;
+            left: 0;
+            picture {
+                height: 100vh;
+                width: auto;
+            }
+        }
+        &.water-tree{
+            left: 330px;
+        }
+        &.lights{
+            left: 0px;
+        }
+        &.bird-1{
+            left: 14%;
+            top: 5%;
+        }
+        &.bird-2{
+            left: 9%;
+            top: 7.5%;
+        }
+        &.bird-3{
+            left: 10%;
+            top: 14%;
+        }
+        &.bird-4{
+            left: 30%;
+            top: 20%;
+        }
+        &.bird-5{
+            left: 49%;
+            top: 5%;
+        }
+        &.bird-6{
+            left: 70%;
+            top: 10%;
+        }
+        &.bird-7{
+            left: 75%;
+            top: 5%;
+        }
+        &.bird-8{
+            left: 52%;
+            top: 12%;
+            z-index: 50;
+        }
+        &.bf-1{
+            left: 30%;
+            top: 40%;
+        }
+        &.bf-2{
+            left: 48%;
+            bottom: 20%;
+        }
+        &.bf-3{
+            left: 60%;
+            bottom: 2%;
+        }
+        &.bf-4{
+            left: 36%;
+            bottom: 12%;
+        }
+        &.bf-5{
+            right: 5%;
+            bottom: 12%;
+        }
+        &.bf-6{
+            right: 7%;
+            bottom: 12%;
+        }
+        &.bf-7{
+            right: 5%;
+            top: 12%;
+        }
+        &.bf-8{
+            right: 7%;
+            top: 22%;
+        }
+    }
+}

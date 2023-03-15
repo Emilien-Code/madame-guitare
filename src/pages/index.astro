@@ -1,0 +1,29 @@
+---
+import Layout from '../components/layouts/Layout.astro';
+import Intro from '../components/sections/Intro.astro';
+import Sea from '../components/sections/Sea.jsx';
+import Forest from '../components/sections/Forest.astro';
+import Cavern from '../components/sections/Cavern.astro';
+import Transition from '../components/sections/Transition.astro';
+import End from '../components/sections/End.astro';
+import "../assets/styles/pages/index.scss"
+---
+
+<Layout 
+	title="Madame Guitare" 
+	description=""
+	isHorizontal={true}
+>
+	<main class="emi-index-main">
+		<div class="scroll-container">
+			<Intro/>
+			<Transition titre="La Forêt"/>
+			<Forest />
+			<Transition titre="Le Lac"/>
+			<Sea client:load/>
+			<Transition titre="La Caverne"/>
+			<Cavern />
+			<End />
+		</div>
+	</main>
+</Layout>

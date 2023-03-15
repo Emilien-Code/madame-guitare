@@ -1,0 +1,123 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./reset.scss";
+
+body,
+html{
+  // width: fit-content;
+  min-height: 100%;
+  background-color: map-get($colors, 'background');
+  color: map-get($colors, 'fonts-light');
+  overflow: hidden;
+  width: 100vw;
+  max-width: 100vw;
+}
+html{
+  scroll-behavior: initial;
+}
+body {
+  h1{
+    font-family: "Tan-Pearl";
+    font-size: map-get($fonts-sizes-desktop, "h1");
+    line-height: map-get($fonts-sizes-desktop, "h1-line");
+    @include interpolate(
+      font-size,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "h1"),
+      map-get($fonts-sizes-desktop, "h1")
+    );
+    @include interpolate(
+      line-height,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "h1-line"),
+      map-get($fonts-sizes-desktop, "h1-line")
+    );
+    @include mq("tablet", max) {
+      font-size: map-get($fonts-sizes-mobile, "h1");
+      line-height: map-get($fonts-sizes-mobile, "h1-line");
+    }
+  }
+
+  .emi-primary-paragraph,
+  p {
+    font-family: "Switzer-Medium";
+    font-size: map-get($fonts-sizes-desktop, "paragraph");
+    line-height: map-get($fonts-sizes-desktop, "paragraph-line");
+    @include interpolate(
+      font-size,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "paragraph"),
+      map-get($fonts-sizes-desktop, "paragraph")
+    );
+    @include interpolate(
+      line-height,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "paragraph-line"),
+      map-get($fonts-sizes-desktop, "paragraph-line")
+    );
+    @include mq("tablet", max) {
+      font-size: map-get($fonts-sizes-mobile, "paragraph");
+      line-height: map-get($fonts-sizes-mobile, "paragraph-line");
+    }
+  }
+ 
+
+  .emi-button-text,
+  button {
+    font-family: "Switzer-Medium";
+    cursor: pointer;
+    font-size: map-get($fonts-sizes-desktop, "button_text");
+    line-height: map-get($fonts-sizes-desktop, "button_text-line");
+    @include interpolate(
+      font-size,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "button_text"),
+      map-get($fonts-sizes-desktop, "button_text")
+    );
+    @include interpolate(
+      line-height,
+      map-get($breakpoints, "tablet"),
+      map-get($breakpoints, "desktop"),
+      map-get($fonts-sizes-mobile, "button_text-line"),
+      map-get($fonts-sizes-desktop, "button_text-line")
+    );
+    @include mq("tablet", max) {
+      font-size: map-get($fonts-sizes-mobile, "button_text");
+      line-height: map-get($fonts-sizes-mobile, "button_text-line");
+    }
+    outline: none
+  }
+
+  a{
+    text-decoration: none;
+    color: map-get($colors, "fonts");
+    &:visited{
+      color: map-get($colors, "fonts");
+    }
+  }
+
+}
+
+.emi-layout {
+  @include grid(
+    map-get($layout-desktop, "column-number"),
+    map-get($layout-desktop, "column-spacing"),
+    map-get($layout-desktop, "margin")
+  );
+  @include mq("tablet", max) {
+    @include grid(
+      map-get($layout-mobile, "column-number"),
+      map-get($layout-mobile, "column-spacing"),
+      map-get($layout-mobile, "margin")
+    );
+  }
+}
+.emi-bubble{
+  font-family: "Tan-Pearl";
+}

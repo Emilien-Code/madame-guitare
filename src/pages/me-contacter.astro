@@ -1,0 +1,29 @@
+---
+import Layout from '../components/layouts/Layout.astro';
+import Picture from "../components/atoms/Picture/Picture";
+import bgJPG from "../assets/images/contact/contact.jpg"
+import bgWEBP from "../assets/images/contact/contact.webp"
+import "../assets/styles/pages/me-contacter.scss"
+---
+
+<Layout 
+	title="Madame Guitare" 
+	description=""
+	isHorizontal={false}
+>
+	<main class="emi-index-main">
+		<div class="scroll-container">
+			<main>
+				<Picture refClass="background" images={[bgJPG, bgJPG, bgWEBP, bgWEBP]} alt="background" />
+				<form action="">
+					<h1>Contact</h1>
+					<input type="text" placeholder="Adresse Email"/>
+					<input type="text" placeholder="Organisme"/>
+					<textarea rows="9" placeholder="Laissez moi un message !"/>
+					<button type="submit"> Envoyer</button>
+				</form>
+			</main>
+
+		</div>
+	</main>
+</Layout>

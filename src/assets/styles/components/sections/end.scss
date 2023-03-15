@@ -1,0 +1,71 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.emi-end{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+
+    .emi-img-render{
+        position: absolute;
+        &.decore{
+            top: 0;
+            left: 0;
+            picture {
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+        &.insect{
+            z-index: 50;
+            &-1{
+                top: 40%;
+                left: 20%;
+            }
+            &-2{
+                transform : scaleX(0.8) rotateZ(20deg);
+                top: 50%;
+                left: 40%;
+            }
+            &-3{
+                transform : scaleX(0.8) rotateZ(20deg);
+                top: 54%;
+                left: 30%;
+            }
+            &-4{
+                transform : scaleX(0.8) rotateZ(20deg);
+                top: 66%;
+                left: 50%;
+            }
+        }
+
+    }
+
+    .front-cavern2{
+        position: absolute;
+        z-index: 50;
+        top: 0px;
+        height: 100vh;
+        picture{
+            height: 100%;
+            img{
+                height: 100%; 
+            }
+        }
+        
+        left: -31%;
+        
+        @include mq('tablet', max){
+            @include interpolate(
+                left,
+                map-get($breakpoints, "tablet"),
+                map-get($breakpoints, "desktop"),
+                -576px,
+                -650px
+            );
+        }
+    }
+
+}

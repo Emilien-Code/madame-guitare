@@ -1,0 +1,25 @@
+---
+import "../assets/styles/pages/gallery.scss"
+import Layout from '../components/layouts/Layout.astro';
+import Picture from "../components/atoms/Picture/Picture";
+
+import bgJPG from "../assets/images/gallery/background.jpg"
+import bgWEBP from "../assets/images/gallery/background.webp"
+import Bubble from "../components/atoms/bubble/bubble.astro";
+
+---
+
+<Layout 
+	title="Madame Guitare" 
+	description=""
+	isHorizontal={false}
+>
+	<main class="emi-index-main">
+		<div class="scroll-container">
+			<main>	
+				<Bubble text='Viens découvrir les amis de Madame Guitare à travers cette galerie'/>
+				<Picture refClass="background" images={[bgJPG, bgJPG, bgWEBP, bgWEBP]} alt="background" />
+			</main>
+		</div>
+	</main>
+</Layout>

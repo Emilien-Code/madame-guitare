@@ -1,0 +1,120 @@
+---
+import bgWebp from "../../assets/images/cavern/bg.webp";
+import bgPng from "../../assets/images/cavern/bg.jpg"
+
+import wallWebp from "../../assets/images/cavern/wall.webp";
+import wallPng from "../../assets/images/cavern/wall.png"
+
+import boatPng from "../../assets/images/cavern/boat.png"
+import boatWebp from "../../assets/images/cavern/boat.webp"
+
+import small_treePng from "../../assets/images/cavern/small_tree.png"
+import small_treeWebp from "../../assets/images/cavern/small_tree.webp"
+
+import big_treePng from "../../assets/images/cavern/big_tree.png"
+import big_treeWebp from "../../assets/images/cavern/big_tree.webp"
+
+import rockPng from "../../assets/images/cavern/rock.png"
+import rockWebp from "../../assets/images/cavern/rock.webp"
+
+import joPng from "../../assets/images/cavern/jo.png"
+import joWebp from "../../assets/images/cavern/jo.webp"
+
+import butterflyPng from "../../assets/images/cavern/butterfly.png"
+import butterflyWebp from "../../assets/images/cavern/butterfly.webp"
+
+import feufolePng from "../../assets/images/cavern/feufole.png"
+import feufoleWebp from "../../assets/images/cavern/feufole.webp"
+
+
+
+import poster from "../../assets/images/poster.png"
+
+
+import Picture from "../atoms/Picture/Picture";
+
+import "../../assets/styles/components/sections/cavern.scss"
+---
+
+<section class="emi-cavern">
+    <Picture refClass="decore" images={[bgPng, bgPng, bgWebp, bgWebp ]} poster={poster} lazy={true} alt="background "  client:load />
+
+    <Picture refClass="feufolet-1" images={[feufolePng, feufolePng, feufoleWebp, feufoleWebp ]} poster={poster} lazy={true} alt="background "
+        speed={-0.15}
+        speedY={-0.05}
+        rotateZ={180}
+        scale={0.5}
+        parallax={true}  
+        client:load />
+
+    <Picture refClass="decore boat" images={[boatPng, boatPng, boatWebp, boatWebp ]} poster={poster} lazy={true} alt="background " 
+        speed={0.2}
+        parallax={true}
+        client:load />
+        
+    <Picture refClass="decore small-tree" images={[small_treePng, small_treePng, small_treeWebp, small_treeWebp ]} poster={poster} lazy={true} alt="background " 
+        speed={-0.03}
+        parallax={true}
+        client:load />
+    <Picture refClass="decore" images={[big_treePng, big_treePng, big_treeWebp, big_treeWebp ]} poster={poster} lazy={true} alt="background " 
+        speed={-0.025}
+        parallax={true}
+        client:load />
+    <Picture refClass="decore rock" images={[rockPng, rockPng, rockWebp, rockWebp ]} poster={poster} lazy={true} alt="background " 
+        speed={-0.07}
+        parallax={true}
+        client:load />
+    <Picture refClass="decore jo" images={[joPng, joPng, joWebp, joWebp ]} poster={poster} lazy={true} alt="Tonton jo ! " 
+        speed={-0.1}
+        scale={0.35}
+        parallax={true}
+        client:load />
+    <Picture refClass="decore wall" images={[wallPng, wallPng, wallWebp, wallWebp ]} poster={poster} lazy={true} alt="background "
+        speed={-0.15}
+        parallax={true}  
+        client:load />
+
+    <Picture refClass="butterfly-1" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background "
+        speed={0.15}
+        speedY={-0.05}
+        rotate={180}
+        scale={0.5}
+        parallax={true}  
+        client:load />
+    <Picture refClass="butterfly-2" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background "
+        speed={0.1}
+        speedY={-0.03}
+        rotate={14}
+        scale={0.3}
+        parallax={true}  
+        client:load />
+    <Picture refClass="butterfly-3" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background "
+        speed={0.1}
+        speedY={-0.03}
+        rotate={14}
+        scale={0.3}
+        parallax={true}  
+        client:load />
+
+    <Picture refClass="feufolet-2" images={[feufolePng, feufolePng, feufoleWebp, feufoleWebp ]} poster={poster} lazy={true} alt="background "
+        speed={0.1}
+        speedY={-0.03}
+        rotate={14}
+        scale={0.3}
+        parallax={true}  
+        client:load />
+    <Picture refClass="feufolet-3" images={[feufolePng, feufolePng, feufoleWebp, feufoleWebp ]} poster={poster} lazy={true} alt="background "
+        speed={0}
+        speedY={-0.3}
+        rotateZ={-50}
+        scale={0.6}
+        parallax={true}  
+        client:load />
+    <Picture refClass="feufolet-4" images={[feufolePng, feufolePng, feufoleWebp, feufoleWebp ]} poster={poster} lazy={true} alt="background "
+        speed={0}
+        speedY={-0.1}
+        rotateZ={190}
+        scale={0.6}
+        parallax={true}  
+        client:load />
+</section>

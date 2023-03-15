@@ -1,0 +1,60 @@
+---
+import bgPng from "../../assets/images/transition/piscenlit.png"
+import poster from "../../assets/images/poster.png"
+import Picture from "../atoms/Picture/Picture";
+import "../../assets/styles/components/sections/transition.scss";
+import BgForestJPG from "../../assets/images/transition/BG-Forest.jpg"
+import BgForestWEBP from "../../assets/images/transition/BG-Forest.webp"
+import BgGrotteJPG from "../../assets/images/transition/BG-Grotte.jpg"
+import BgGrotteWEBP from "../../assets/images/transition/BG-Grotte.webp"
+
+import FrontForestJPG from "../../assets/images/transition/Front_trees.png"
+import FrontForestWEBP from "../../assets/images/transition/Front_trees.webp"
+import lacBGJPG from "../../assets/images/transition/lacBG.png"
+import lacBGWEBP from "../../assets/images/transition/lacBG.webp"
+
+import rockJpg from "../../assets/images/transition/rock.png"
+import rockWebp from "../../assets/images/transition/rock.webp"
+
+const { titre } = Astro.props
+---
+
+<section 
+    class="emi-transition"
+    >
+    {
+        titre==="La Forêt" ? 
+        <Picture refClass="bg-forest" images={[BgForestJPG, BgForestJPG, BgForestWEBP, BgForestWEBP ]} poster={poster} lazy={true} alt="background "  client:load /> 
+        : <></>
+    }
+    {
+        titre==="Le Lac" ? 
+        <Picture refClass="bg-forest" images={[lacBGJPG, lacBGJPG, lacBGWEBP, lacBGWEBP ]} poster={poster} lazy={true} alt="background "  client:load /> 
+        : <></>
+    }
+    {
+        titre==="La Caverne" ? 
+        <Picture refClass="bg-forest" images={[BgGrotteJPG, BgGrotteJPG, BgGrotteWEBP, BgGrotteWEBP ]} poster={poster} lazy={true} alt="background "  client:load /> 
+        : <></>
+    }
+    <div
+    class={"emi-transition-pannel emi-img-render " + `${titre==="La Caverne" ? "La_Caverne" : ""}`} 
+        data-parallax="false"
+        data-parallax-speed={0}
+        data-parallax-speed-y={0}
+        data-scale={1}
+        data-rotate={0}
+    >
+    <h1>{titre}</h1>
+    </div>
+    {
+        titre==="La Forêt" ? 
+        <Picture refClass="front-forest" images={[FrontForestJPG, FrontForestJPG, FrontForestWEBP, FrontForestWEBP ]} poster={poster} lazy={true} alt="background "  client:load />
+        :<></>
+    }
+    {
+        titre==="La Caverne" ? 
+        <Picture speed={-0.1} parallax={true} refClass="front-cavern" images={[rockJpg, rockJpg, rockWebp, rockWebp ]} poster={poster} lazy={true} alt="background "  client:load />
+        :<></>
+    }
+</section> 

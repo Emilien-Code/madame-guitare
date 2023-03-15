@@ -1,0 +1,48 @@
+.emi-introduction{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    .emi-img-render{
+        position: absolute;
+
+        &.decore{
+            top: 0;
+            left: 0;
+            img{
+                overflow: visible;
+            }
+            picture {
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+        &.parrot{
+            &-1{
+                top: 10%;
+                right: 5%;
+            }
+            &-2{
+                transform : scaleX(0.8) rotateZ(20deg) rotateY(0deg);
+                top: 15%;
+                right: 15%;
+            }
+        }
+        &.butterfly{
+            &-1{
+                bottom: 20%;
+                right: 5%;
+                transform : scale(0.4) rotateY(-180deg);
+
+            }
+            &-2{
+                transform : scale(0.3) rotate(20deg);
+                bottom: 15%;
+                left: 5%;
+            }
+        }
+
+    }
+
+}

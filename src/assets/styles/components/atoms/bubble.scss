@@ -1,0 +1,71 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.emi-bubble{
+    display: block;
+    position: absolute;
+    background-color: #00000088;
+    @include interpolate(
+        top,
+        map-get($breakpoints, "tablet"),
+        map-get($breakpoints, "desktop"),
+        24px,
+        133px,
+    );
+    z-index: 10;
+
+    @include interpolate(
+        padding-top,
+        map-get($breakpoints, "tablet"),
+        map-get($breakpoints, "desktop"),
+        12px,
+        24px,
+    );
+    @include interpolate(
+        padding-bottom,
+        map-get($breakpoints, "tablet"),
+        map-get($breakpoints, "desktop"),
+        12px,
+        24px,
+    );
+    @include interpolate(
+        padding-left,
+        map-get($breakpoints, "tablet"),
+        map-get($breakpoints, "desktop"),
+        12px,
+        64px,
+    );
+    @include interpolate(
+        padding-right,
+        map-get($breakpoints, "tablet"),
+        map-get($breakpoints, "desktop"),
+        12px,
+        64px,
+    );
+
+
+
+    @include interpolate(
+        font-size,
+        map-get($breakpoints, "tablet"),
+        map-get($breakpoints, "desktop"),
+        14px,
+        32px,
+
+    );
+    @include interpolate(
+        line-height,
+        map-get($breakpoints, "tablet"),
+        map-get($breakpoints, "desktop"),
+        24px,
+        44px,
+
+    );
+
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 150px;
+    max-width: 80vw;
+    width: 80vw;
+}

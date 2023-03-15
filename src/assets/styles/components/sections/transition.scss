@@ -1,0 +1,89 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+.emi-transition{
+    width: fit-content;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: visible;
+    z-index: 10;
+    .bg-forest,.front-forest{
+        width: 100%;
+        height: auto;
+        picture{
+            // overflow: visible;  
+            object-fit: cover;
+            width: 100%;
+            height: 100vh;
+            img{
+                // overflow: visible;
+                
+                width: 100%
+            };
+        }
+    }
+    .front-forest{
+        overflow: visible;
+        width: 120vw;
+        position: absolute;
+        z-index: 50;
+        top: 0;
+        left: -10vw;
+        picture{
+            overflow: visible;  
+            img{
+                overflow: visible;
+            }
+        }
+        @include mq('tablet', max){
+            display: none;
+        }
+
+    }
+    .front-cavern{
+        position: absolute;
+        z-index: 50;
+        top: 0px;
+        height: 100vh;
+        picture{
+            height: 100%;
+            img{
+                height: 100%;
+                
+            }
+        }
+
+        right: -35%;
+        @include mq('tablet', max){
+                
+            @include interpolate(
+                right,
+                map-get($breakpoints, "tablet"),
+                map-get($breakpoints, "desktop"),
+                -576px,
+                -650px
+            )
+
+        }
+    }
+
+
+    &-pannel{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000CC;
+        &.La_Caverne{
+            background-color: #00000033;
+        }
+        h1{
+            width: fit-content;
+            white-space: nowrap;
+        }
+    }
+}

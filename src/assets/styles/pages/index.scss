@@ -1,0 +1,12 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.emi-index-main{
+    width: 100vw;
+    overflow: hidden;
+    .scroll-container{
+        display: flex;  
+        position: relative;
+        width: fit-content;
+    } 
+}

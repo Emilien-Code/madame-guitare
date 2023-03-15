@@ -1,0 +1,107 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+.emi-sea{
+    height: fit-content;
+    // z-index: 2;
+    background-color: #77CBC1;   
+    .pin{
+        position: sticky;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        @include interpolate(
+            height,
+            map-get($breakpoints, "tablet"),
+            map-get($breakpoints, "desktop"),
+            800px,
+            1800px,
+          );
+        .emi-img-render{
+            position: absolute;
+            &.decore{
+                top: 0;
+                left: 0;
+                picture {
+                    height: auto;
+                    @include mq("tablet", max){
+                        height: 100vh;
+                    }
+                    width: 100vw;
+                }
+            }
+            &.ban-1{
+                &.fish-1{
+                    bottom: 20%;
+                    transform: scale(0.6); 
+                }
+                &.fish-2{
+                    bottom: 25%;
+                    left:10%;
+                    transform: scale(0.7); 
+                }
+                &.fish-3{
+                    bottom: 31%;
+                    left: 12%;
+                    transform: scale(0.5); 
+                }
+                &.fish-4{
+                    bottom: 20%;
+                    left: 12%;
+                    transform: scale(0.4); 
+                }
+                &.fish-5{
+                    bottom: 26%;
+                    left: 20%;
+                    transform: scale(0.5); 
+                }
+                &.fish-6{
+                    bottom: 30%;
+                    left: -2%;
+                    transform: scale(0.6); 
+                }
+            }
+
+            &.ban-2{
+                &.fish-1{
+                    right: 5%;
+                    bottom: 35%;
+                    transform: rotateY(180deg) scale(0.6); 
+                }
+                &.fish-2{
+                    bottom: 40%;
+                    right:0%;
+                    transform: rotateY(180deg) scale(1); 
+                }
+                &.fish-3{
+                    bottom: 42%;
+                    right: 6%;
+                    transform: rotateY(180deg) scale(0.7); 
+                }
+                &.fish-4{
+                    bottom: 38vh;
+                    right: 12%;
+                    transform: rotateY(180deg) scale(0.5); 
+                }  
+            }
+
+            &.raie-1{
+                bottom: 35vh;
+                right: 35%;
+            }
+            &.raie-2{
+                bottom: 20vh;
+                right: 15%;
+            }
+            &.medusa-1{
+                top: 50%;
+                left: 20%;
+            }
+            &.medusa-2{
+                top: 40%;
+                transform: rotateY(-180deg);
+                right: 30%;
+            }
+
+        }
+    }
+}

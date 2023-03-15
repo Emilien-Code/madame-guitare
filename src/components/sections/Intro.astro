@@ -1,0 +1,44 @@
+---
+import bgWebp from "../../assets/images/introduction/bg.webp";
+import bgPng from "../../assets/images/introduction/bg.png"
+
+import treeWebp from "../../assets/images/introduction/Tree.webp";
+import treePng from "../../assets/images/introduction/Tree.png"
+
+import plateform1Webp from "../../assets/images/introduction/platform_1.webp";
+import plateform1Png from "../../assets/images/introduction/platform_1.png"
+
+import plateform2Webp from "../../assets/images/introduction/platform_2.webp";
+import plateform2Png from "../../assets/images/introduction/platform_2.png"
+
+import mainPlatformWebp from "../../assets/images/introduction/main_platform.webp";
+import mainPlatformPng from "../../assets/images/introduction/main_platform.png"
+
+import peroquetsWebp from "../../assets/images/introduction/peroquay.webp"
+import peroquetsPng from "../../assets/images/introduction/peroquay.png"
+
+import butterflyWebp from "../../assets/images/introduction/butterfly.webp"
+import butterflyPng from "../../assets/images/introduction/butterfly.png"
+
+
+import poster from "../../assets/images/poster.png"
+
+
+
+
+import Picture from "../atoms/Picture/Picture";
+
+import "../../assets/styles/components/sections/intro.scss"
+---
+
+<section class="emi-introduction">
+    <Picture refClass="decore"images={[bgPng, bgPng, bgWebp, bgWebp ]} poster={poster} lazy={true} alt="background "  client:load />
+    <Picture speed={-0.05} parallax={true} refClass="decore"images={[treePng, treePng, treeWebp, treeWebp ]} poster={poster} lazy={true} alt="background "  client:load />
+    <Picture parallax={true} speed={-0.1} refClass="decore"images={[plateform1Png, plateform1Png, plateform1Webp, plateform1Webp ]} poster={poster} lazy={true} alt="background "  client:load />
+    <Picture parallax={true} speed={-0.15} refClass="decore"images={[plateform2Png, plateform2Png, plateform2Webp, plateform2Webp ]} poster={poster} lazy={true} alt="background "  client:load />
+    <Picture parallax={true} speed={-0.2} rotateZ="20" scale="0.8" refClass="parrot-2" images={[peroquetsPng, peroquetsPng, peroquetsWebp, peroquetsWebp ]} poster={poster} lazy={true} alt="background"  client:load />
+    <Picture parallax={true} speed={-0.2} refClass="decore"images={[mainPlatformPng, mainPlatformPng, mainPlatformWebp, mainPlatformWebp ]} poster={poster} lazy={true} alt="background "  client:load />
+    <Picture parallax={true} speed={-0.5} refClass="parrot-1" images={[peroquetsPng, peroquetsPng, peroquetsWebp, peroquetsWebp ]} poster={poster} lazy={true} alt="background"  client:load />
+    <Picture parallax={true} speed={0.3} rotate="-180" scale="0.4" refClass="butterfly-1" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background"  client:load />
+    <Picture parallax={true} speed={0.2} rotateZ="20" scale="0.3" refClass="butterfly-2" images={[butterflyPng, butterflyPng, butterflyWebp, butterflyWebp ]} poster={poster} lazy={true} alt="background"  client:load />
+</section>

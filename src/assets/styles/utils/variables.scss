@@ -1,0 +1,131 @@
+$brands-primary: (
+  "black": #001323,
+  "light-black": #00192F,
+  "gray": #D9D9D9,
+  "white": #ffffff,
+);
+
+$brands-secondary: (
+  "blue": #0066B3,
+  "yellow": #EBD61B,
+  "red": #EB1B24,
+);
+
+$colors: (
+  "background": map-get($brands-primary, 'white'),
+  "background-dark": map-get($brands-primary, 'black'),
+  "fonts": map-get($brands-primary, 'black'),
+  "fonts-light": map-get($brands-primary, "white"),
+);
+
+//Spacing
+$spacing-desktop: (
+  "xxxl": 200px,
+  "xxl": 120px,
+  "xl": 100px,
+  "l": 80px,
+  "m": 60px,
+  "s": 40px,
+  "xs": 24px,
+  "xxs": 20px,
+);
+$spacing-mobile: (
+  "xxxl": 120px,
+  "xxl": 100px,
+  "xl": 80px,
+  "l": 60px,
+  "m": 40px,
+  "s": 32px,
+  "xs": 24px,
+  "xxs": 12px,
+);
+$spacing-short: (
+  "xxxl": 16px,
+  "xxl": 14px,
+  "xl": 12px,
+  "l": 10px,
+  "m": 8px,
+  "s": 6px,
+  "xs": 4px,
+  "xxs": 2px,
+);
+
+// Breakpoints
+$breakpoints: (
+  "phone-small": 320px,
+  "tablet": 768px,
+  "tablet-wide": 1024px,
+  "desktop": 1440px,
+  "desktop-wide": 1920px,
+);
+$fonts-sizes-desktop: (
+
+  "h1": 64px,
+  "h1-line": 87.68px,
+
+  "paragraph": 32px,
+  "paragraph-line": 42.24px,
+
+  "button_text": 24px,
+  "button_text-line" : 31.68px,
+
+);
+$fonts-sizes-mobile: (
+
+  "h1": 32px,
+  "h1-line": 43.84px,
+
+  "button_text": 16px,
+  "button_text-line" : 21.12px,
+
+  "paragraph": 24px,
+  "paragraph-line": 31.68px,
+
+);
+
+
+
+
+
+$layout-desktop: (
+  "margin": 40px,
+  "column-spacing": 20px,
+  "column-number": 12,
+);
+$layout-mobile: (
+  "margin": 16px,
+  "column-spacing": 12px,
+  "column-number": 8,
+);
+$section-desktop: (
+  "padding": 200px,
+  // See Design Decisions in Figma
+);
+$section-mobile: (
+  "padding": 80px,
+  // See Design Decisions in Figma
+);
+$paragraph-desktop: (
+  // See Design Decisions in Figma
+  "h-margin": 28px,
+  "p-margin": 16px,
+  "button-margin": 40px
+);
+$paragraph-desktop: (
+  // See Design Decisions in Figma
+  "h-margin": 28px,
+  "p-margin": 16px,
+  "button-margin": 40px
+);
+// Z-Indexes
+$z-indexes: ("content", "menu", "header", "modal", "loader");
+
+$header-height-dekstop: (
+  "normal": 120px,
+  // "onScroll": ??,
+);
+
+$header-height-mobile: (
+  "normal": 50px,
+  // "onScroll": ??,
+);
