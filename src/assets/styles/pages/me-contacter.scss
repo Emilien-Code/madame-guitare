@@ -1,5 +1,4 @@
 main {
-
     width: 100%;
     height: 100vh;
     max-height: 100vh;
@@ -72,6 +71,15 @@ main {
 
             color: #fff;
 
+        }
+
+        div{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            svg{
+                margin-left: 16px;
+            }
         }
         
         
