@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { BREAKPOINTS } from "../../../assets/scripts/utils/variables";
-import { isVisible } from '../../../assets/scripts/utils/dom';
+import { isLoadable } from '../../../assets/scripts/utils/dom';
 
 // Import component style 
 import './picture.scss';
@@ -19,7 +19,7 @@ const Picture = (props) => {
 
     // Init lazy functions 
     const setIntersect = () => {
-        if (isVisible(el.current)) {
+        if (isLoadable(el.current)) {
             let sources = el.current.querySelectorAll('source');
             let img = el.current.querySelector('img');
 

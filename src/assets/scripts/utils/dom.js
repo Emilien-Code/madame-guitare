@@ -11,6 +11,11 @@ export const isVisible = (element) => {
     return object.top < window.innerHeight && object.bottom > 0 && object.left < window.innerWidth && object.right > 0;
 }
 
+export const isLoadable = (element) => {
+    const object = element.getBoundingClientRect();
+    return object.top < window.innerHeight && object.bottom > 0 && object.left < window.innerWidth && object.right > -250;
+}
+
 export async function isTypoReady() {
     let ready = await getDocument().fonts.ready;
     // console.log(ready);
