@@ -32,11 +32,15 @@ import poster from "../../assets/images/poster.png"
 
 
 import Picture from "../atoms/Picture/Picture";
+import Bubble from "../atoms/bubble/bubble.astro";
 
 import "../../assets/styles/components/sections/cavern.scss"
 ---
 
 <section class="emi-cavern">
+    <Bubble type="button" text="Bébé Ukulélé"/>
+    <Bubble type="button" text="Jo le Piano"/>
+
     <Picture refClass="decore" images={[bgPng, bgPng, bgWebp, bgWebp ]} poster={poster} lazy={true} alt="background "  client:load />
 
     <Picture refClass="feufolet-1" images={[feufolePng, feufolePng, feufoleWebp, feufoleWebp ]} poster={poster} lazy={true} alt="background "

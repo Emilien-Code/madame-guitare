@@ -23,9 +23,15 @@ import butterflyPng from "../../assets/images/forest/Butterfly.png"
 import Picture from "../atoms/Picture/Picture";
 
 import "../../assets/styles/components/sections/forest.scss"
+import Bubble from "../atoms/bubble/bubble.astro";
 ---
 
 <section class="emi-forest">
+    <Bubble type="button" text="Lucas l’Harmonica"/>
+    <Bubble type="button" text="Léon l’Accordéon"/>
+    <Bubble type="button" text="Suzette l’Épinette"/>
+
+
     <Picture refClass="decore" images={[bgPng, bgPng, bgWebp, bgWebp ]} poster={poster} lazy={true} alt="background "  client:load />
 
     <Picture refClass="bird-1" images={[birdPng, birdPng, birdWebp, birdWebp ]} poster={poster} lazy={true} alt="background "  

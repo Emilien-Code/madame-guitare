@@ -20,8 +20,9 @@ const { titre } = Astro.props
 ---
 
 <section 
-    class="emi-transition"
-    >
+
+class="emi-transition"
+>
     {
         titre==="La Forêt" ? 
         <Picture refClass="bg-forest" images={[BgForestJPG, BgForestJPG, BgForestWEBP, BgForestWEBP ]} poster={poster} lazy={true} alt="background "  client:load /> 

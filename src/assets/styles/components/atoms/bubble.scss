@@ -1,10 +1,17 @@
 @import "../../utils/mixins";
 @import "../../utils/variables";
 
-.emi-bubble{
+.emi-bubble, button.emi-bubble{
+    color: #fff;
+    border: none;
+
     display: block;
     position: absolute;
     background-color: #00000088;
+    &.button{
+        width: fit-content;
+        top: 32px;
+    }
     @include interpolate(
         top,
         map-get($breakpoints, "tablet"),

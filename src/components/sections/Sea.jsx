@@ -25,6 +25,7 @@ import Picture from "../atoms/Picture/Picture";
 import Transition from "./Transition.astro"
 import "../../assets/styles/components/sections/sea.scss";
 import { getRectangle, isVisible } from "../../assets/scripts/utils/dom"
+import Bubble from "../atoms/bubble/bubble.astro";
 
 
 const Sea = () => {
@@ -64,7 +65,7 @@ const Sea = () => {
 			{/* <Transition titre="Le lac"/> */}
 
                 <div className="pin">
-                        
+                    <button class="emi-bubble button"> Gédéon le Violon </button>
                     <Picture refClass="decore" images={[bgPng, bgPng, bgWebp, bgWebp ]} poster={poster} lazy={true} alt="background "/>
                     <Picture 
                         speedY={-0.2}

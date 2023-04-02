@@ -86,4 +86,12 @@
             top: 22%;
         }
     }
+    .emi-bubble{
+        &:nth-child(1){
+            left: 18.5%;
+        }
+        &:nth-child(3){
+            left: 88.5%;
+        }
+    }
 }

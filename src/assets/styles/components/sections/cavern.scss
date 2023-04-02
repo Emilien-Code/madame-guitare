@@ -3,6 +3,15 @@
     width: 420vh;
     position: relative;
     overflow: hidden;
+    .emi-bubble{
+        top: 32px;
+        &:nth-child(1){
+            left: 25%;
+        }
+        &:nth-child(2){
+            left: 67%;
+        }
+    }
     .emi-img-render{
         position: absolute;
         &.butterfly-1{

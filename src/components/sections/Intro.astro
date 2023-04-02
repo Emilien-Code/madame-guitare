@@ -29,9 +29,12 @@ import poster from "../../assets/images/poster.png"
 import Picture from "../atoms/Picture/Picture";
 
 import "../../assets/styles/components/sections/intro.scss"
+import Bubble from "../atoms/bubble/bubble.astro";
 ---
 
 <section class="emi-introduction">
+    <Bubble type="button" text="Madame Guitare"/>
+    
     <Picture refClass="decore"images={[bgPng, bgPng, bgWebp, bgWebp ]} poster={poster} lazy={true} alt="background "  client:load />
     <Picture speed={-0.05} parallax={true} refClass="decore"images={[treePng, treePng, treeWebp, treeWebp ]} poster={poster} lazy={true} alt="background "  client:load />
     <Picture parallax={true} speed={-0.1} refClass="decore"images={[plateform1Png, plateform1Png, plateform1Webp, plateform1Webp ]} poster={poster} lazy={true} alt="background "  client:load />

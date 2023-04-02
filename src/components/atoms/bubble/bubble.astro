@@ -1,6 +1,13 @@
 ---
-const { text } = Astro.props
-import "../../../assets/styles/components/atoms/bubble.scss"
----
 
-<span class="emi-bubble">{ text }</span>
+import "../../../assets/styles/components/atoms/bubble.scss"
+const { type, text } = Astro.props
+
+---
+{
+    type==='button' ? 
+    <button class="emi-bubble button">{ text }</button>
+    :
+    <span class="emi-bubble">{ text }</span>
+
+}
