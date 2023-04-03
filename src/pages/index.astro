@@ -8,6 +8,7 @@ import Transition from '../components/sections/Transition.astro';
 import End from '../components/sections/End.astro';
 import "../assets/styles/pages/index.scss"
 import InstrumentModale from '../components/molecules/InstrumentModale';
+import Loader from '../components/layouts/Loader';
 ---
 
 <Layout 
@@ -17,6 +18,7 @@ import InstrumentModale from '../components/molecules/InstrumentModale';
 >
 	<main class="emi-index-main">
 		<div class="scroll-container">
+			<Loader client:load/>
 			<InstrumentModale client:load />
 			<Intro/>
 			<Transition titre="La Forêt"/>

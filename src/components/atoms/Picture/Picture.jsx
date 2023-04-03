@@ -73,10 +73,13 @@ const Picture = (props) => {
         document.querySelector("main").addEventListener("scroll", setIntersect);
     }
 
-    React.useEffect(() => {
+    React.useEffect(() => { 
         if (lazy) {
+            setTimeout(()=>{
+
+                setIntersect();
+            }, 1000)
             customIntersect();
-            setIntersect();
         }
     }, [])
 

@@ -1,0 +1,48 @@
+.emi-loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: #060606DA;
+    backdrop-filter: blur(70px);
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    .cache  {
+        position: absolute;
+        background-color: #060606DA;
+        backdrop-filter: blur(70px);
+        width: 100%;
+        height: 50%;
+        top: -50%;
+    }
+    span{
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        font-family: "Tan-Pearl";
+        border: solid 1px #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 64px;
+        margin-left: 80px;
+    }
+    h1, p{
+        max-width: 90%;
+        position: absolute;
+        left: 50%;
+    }
+    h1{
+        width: 815px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        text-align: center;
+    }
+    p{
+       bottom: 5%;
+       transform: translate(-50%, -50%);
+        font-family: "Switzer-Regular";
+        font-size: 20px;
+    }
+}
