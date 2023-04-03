@@ -7,6 +7,7 @@ import Cavern from '../components/sections/Cavern.astro';
 import Transition from '../components/sections/Transition.astro';
 import End from '../components/sections/End.astro';
 import "../assets/styles/pages/index.scss"
+import InstrumentModale from '../components/molecules/InstrumentModale';
 ---
 
 <Layout 
@@ -16,6 +17,7 @@ import "../assets/styles/pages/index.scss"
 >
 	<main class="emi-index-main">
 		<div class="scroll-container">
+			<InstrumentModale client:load />
 			<Intro/>
 			<Transition titre="La Forêt"/>
 			<Forest />

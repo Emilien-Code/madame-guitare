@@ -6,7 +6,7 @@ const { type, text } = Astro.props
 ---
 {
     type==='button' ? 
-    <button class="emi-bubble button">{ text }</button>
+    <button class={"emi-bubble button " + text.split(" ").join("")}>{ text }</button>
     :
     <span class="emi-bubble">{ text }</span>
 

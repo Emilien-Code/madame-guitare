@@ -65,7 +65,7 @@ const Sea = () => {
 			{/* <Transition titre="Le lac"/> */}
 
                 <div className="pin">
-                    <button class="emi-bubble button"> Gédéon le Violon </button>
+                    <button class="emi-bubble button GédéonleViolon"> Gédéon le Violon </button>
                     <Picture refClass="decore" images={[bgPng, bgPng, bgWebp, bgWebp ]} poster={poster} lazy={true} alt="background "/>
                     <Picture 
                         speedY={-0.2}
