@@ -9,6 +9,14 @@
     position: absolute;
     background-color: #00000088;
     &.button{
+        @include interpolate(
+            line-height,
+            map-get($breakpoints, "tablet"),
+            map-get($breakpoints, "desktop"),
+            24px,
+            32px,
+    
+        );
         top: 32px;
         width: fit-content;
         box-shadow: inset 0px 10px 24px rgba(255, 255, 255, 0.25);
