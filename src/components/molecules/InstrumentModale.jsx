@@ -40,7 +40,8 @@ const InstrumentModale = ()=>{
 
                 for(let i = 100; i >= 0; i--){
                     setTimeout(()=>{
-                        modale.style.opacity = `${i/100}`;
+                        modale.style.borderRadius = `${ 100 - i }%`;
+                        modale.style.transform = `translateY(-${100 - i}%)`;
                     }, 50);
                 }
             }
@@ -53,11 +54,11 @@ const InstrumentModale = ()=>{
         if(instrument){
 
             const modale = document.querySelector(".emi-instrument-modale")
-            modale.style.transition = `1s`;
-            modale.style.borderRadius = `0`;
+            modale.style.transition = `1s cubic-bezier(.69,0,.16,.99)`;
             for(let i = 100; i >= 0; i--){
                 setTimeout(()=>{
-                    modale.style.opacity = `${1/i+1}`;
+                    modale.style.opacity = `${1/i+51}`;
+                    modale.style.borderRadius = `${100 - i-100 }%`;
                     modale.style.transform = `translateY(-${i}%)`;
                 }, 50);
             }
