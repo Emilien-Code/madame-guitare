@@ -12,8 +12,8 @@ async function main(dest, from, message) {
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: "look@emi-studio.fr", 
-      pass: "V1V13r&m1l13n54", 
+      user: "***", 
+      pass: "***", 
     },
   });
 
