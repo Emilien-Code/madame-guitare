@@ -1,0 +1,102 @@
+---
+import Layout from '../components/layouts/Layout.astro';
+import Picture from "../components/atoms/Picture/Picture";
+import branch1Webp from "../assets/images/ce-que-je-propose/Branche1.webp"
+import branch1Jpg from "../assets/images/ce-que-je-propose/Branche1.png"
+import branch2Webp from "../assets/images/ce-que-je-propose/Branche2.webp"
+import branch2Jpg from "../assets/images/ce-que-je-propose/Branche2.png"
+import branch3Webp from "../assets/images/ce-que-je-propose/Branche3.webp"
+import branch3Jpg from "../assets/images/ce-que-je-propose/Branche3.png"
+import WordParser from '../components/atoms/WordParser';
+import "../assets/styles/pages/ce-que-je-propose.scss"
+---
+
+<Layout 
+	title="Madame Guitare" 
+	description=""
+	isHorizontal={false}
+>
+	<main class="emi-index-main">
+		<div class="scroll-container">
+			<main>
+				<section class="header">
+                    
+                    <h1>Ce que je propose</h1>
+					<Picture 
+                    parallax={true}
+                    speedY={-0.6}
+                    rotate={0.015}
+                    isRotateAnimated={true}
+                    refClass="branch1" images={[branch1Jpg, branch1Jpg, branch1Webp, branch1Webp]} alt="background" client:load/>
+                    <Picture 
+                    parallax={true}
+                    speedY={-0.6}
+                    rotate={-0.015}
+                    isRotateAnimated={true}
+                    refClass="branch1" images={[branch2Jpg, branch2Jpg, branch2Webp, branch2Webp]} alt="background" client:load/>
+
+				</section>
+                
+                <section class="texts">
+                    
+                    <ul>
+                        <li>
+                            <p>
+                                <WordParser children="Des séances d’éveil sonore et musical pour enfants de 0 à 6 ans, parents, assistantes maternelles."/>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <WordParser children="Des contes sonores pour tout-petits (0-4 ans)."/>
+                            </p>
+                        </li>
+                        <li>
+                            <p> 
+                                <WordParser children="Des formations musique pour les professionnels de la Petite Enfance par exemple : apprendre à jouer du ukulélé sur des comptines pour enfants."/>
+                            </p>
+                        </li>
+                        <li>
+                            <p>  
+                                <WordParser children="Des projets musique et parentalité."/>
+                            </p>
+                        </li>
+                        <li>    
+                            <p>  
+                                <WordParser children="Secteur de Nancy"/>
+                            </p>
+                        </li>
+                    </ul>
+                    
+                </section>
+                <section class="footer">
+                    <Picture 
+                    parallax={true}
+                    speedY={0.16}
+                    isRotateAnimated={true}
+                    refClass="branch3" images={[branch3Jpg, branch3Jpg, branch3Webp, branch3Webp]} alt="background" client:load/>
+                </section>
+
+			</main>
+
+		</div>
+        <script>
+            const isVisible = (element) => {
+                const object = element.getBoundingClientRect();
+                return object.top < window.innerHeight && object.bottom < 500 && object.left < window.innerWidth && object.right > 0;
+            }
+            setTimeout(()=>{
+                window.lenis.on("scroll", () => {
+                    document.querySelectorAll(".emi-word-content").forEach(word => {
+                        
+                        if(isVisible(word)){
+                            word.style.color = "#ffffff"
+                        } else {
+                            word.style.color = "#367237"
+                        }
+
+                    });
+                })
+            }, 500  )
+        </script>
+	</main>
+</Layout>

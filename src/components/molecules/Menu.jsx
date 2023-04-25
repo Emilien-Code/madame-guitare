@@ -30,6 +30,7 @@ const Menu = () => {
                     <>
                         <a className={`link ${ isMenuOpen ? "open" : "" }`} href="/">Accueil</a>
                         <a className={`link ${ isMenuOpen ? "open" : "" }`} href="/qui-suis-je">Qui suis-je ?</a>
+                        <a className={`link ${ isMenuOpen ? "open" : "" }`} href="/ce-que-je-propose">Ce que je propose</a>
                         <a className={`link ${ isMenuOpen ? "open" : "" }`} href="/gallerie">Galerie</a>
                         <a className={`link ${ isMenuOpen ? "open" : "" }`} href="/me-contacter">Me contacter</a>
 

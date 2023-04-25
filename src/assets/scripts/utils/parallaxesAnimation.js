@@ -5,6 +5,7 @@ const scrollValueR = []
 
 const parallaxAnimation = (scroll) => {
     const images = document.querySelectorAll(".emi-img-render")
+
     const els = [...images]
     if(scrollValueX.length === 0){
 
