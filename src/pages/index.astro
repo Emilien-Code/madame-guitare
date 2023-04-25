@@ -9,6 +9,7 @@ import End from '../components/sections/End.astro';
 import "../assets/styles/pages/index.scss"
 import InstrumentModale from '../components/molecules/InstrumentModale';
 import Loader from '../components/layouts/Loader';
+import Particle from '../components/atoms/particle/particle';
 ---
 
 <Layout 
@@ -19,6 +20,7 @@ import Loader from '../components/layouts/Loader';
 	<main class="emi-index-main">
 		<div class="scroll-container">
 			<Loader client:load/>
+			<Particle client:load/>
 			<InstrumentModale client:load />
 			<Intro/>
 			<Transition titre="La Forêt"/>

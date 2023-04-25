@@ -1,0 +1,8 @@
+.particle {
+    display: block;
+    z-index: 99;
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, #868811 0%, rgba(134, 136, 17, 0) 100%);
+    border-radius: 50%;
+    will-change: transform;
+}
