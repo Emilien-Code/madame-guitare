@@ -5,7 +5,7 @@ import "../../../public/In_A_World_Of_Natural_Wonder.mp3"
 
 const SoundIcon = () => {
     const [isSound, setIsSound] = React.useState(true)
-    const [audio, setAudio] = React.useState(new Audio('../public/In_A_World_Of_Natural_Wonder.mp3'))
+    const [audio, setAudio] = React.useState(new Audio('/In_A_World_Of_Natural_Wonder.mp3'))
 
     React.useEffect(()=>{
         audio.addEventListener("canplaythrough", ()=>{
