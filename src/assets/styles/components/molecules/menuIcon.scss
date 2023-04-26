@@ -12,3 +12,17 @@
     border:none;
     cursor: pointer;
 }
+.soundIcon {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 100;
+    background-color: transparent;
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: block;
+    border:none;
+    cursor: pointer;
+}

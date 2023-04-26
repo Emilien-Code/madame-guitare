@@ -10,6 +10,8 @@ import "../assets/styles/pages/index.scss"
 import InstrumentModale from '../components/molecules/InstrumentModale';
 import Loader from '../components/layouts/Loader';
 import Particle from '../components/atoms/particle/particle';
+import mp3 from "../../public/In_A_World_Of_Natural_Wonder.mp3"
+import SoundIcon from "../components/atoms/SoundIcon"
 ---
 
 <Layout 
@@ -18,7 +20,12 @@ import Particle from '../components/atoms/particle/particle';
 	isHorizontal={true}
 >
 	<main class="emi-index-main">
+		<audio autoplay>
+			<source src={mp3} type="audio/mp3">
+		  Your browser does not support the audio element.
+		  </audio>
 		<div class="scroll-container">
+			<SoundIcon client:load/>
 			<Loader client:load/>
 			<Particle client:load/>
 			<InstrumentModale client:load />
@@ -32,4 +39,7 @@ import Particle from '../components/atoms/particle/particle';
 			<End />
 		</div>
 	</main>
+	<script>
+		document.querySelector("audio").volume = 0.3
+	</script>
 </Layout>
