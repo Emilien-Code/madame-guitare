@@ -77,7 +77,7 @@ const Sea = () => {
                         speedY={-0.2}
                         parallax={true}
                         isFullyVisible={true}
-                        refClass="decore"
+                        refClass="decore rock"
                         images={[rockPng, rockPng, rockWebp, rockWebp ]}
                         poster={poster}
                         lazy={true}

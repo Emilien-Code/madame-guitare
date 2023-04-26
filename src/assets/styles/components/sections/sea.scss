@@ -31,6 +31,15 @@
                     }
                     width: 100vw;
                 }
+                &.rock{
+                    @include interpolate(
+                        top,
+                        map-get($breakpoints, "tablet"),
+                        map-get($breakpoints, "desktop"),
+                        100px,
+                        400px,
+                      );
+                }
             }
             &.ban-1{
                 &.fish-1{
