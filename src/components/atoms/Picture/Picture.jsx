@@ -6,7 +6,7 @@ import { isLoadable } from '../../../assets/scripts/utils/dom';
 import './picture.scss';
 
 const Picture = (props) => {
-    const { images, alt, refClass, lazy, poster, width, height, parallax, speedY, initialX, initialY, scale, initialXMobile, initialYMobile, isRotateAnimated, rotate, rotateZ, speed, isFullyVisible} = props;
+    const { images, alt, refClass, lazy, poster, width, height, parallax, speedY, initialX, initialY, scale, initialXMobile, initialYMobile, isRotateAnimated, rotate, rotateZ, speed, isFullyVisible, mobileScale} = props;
     const el = React.useRef();
     const [isLazyVisible, setIsLazyVisible] = React.useState();
     const p = poster
@@ -97,6 +97,7 @@ const Picture = (props) => {
                 data-rotate={rotate ? rotate : 0}
                 data-rotate-z={ rotateZ ? rotateZ : 0 }
                 data-is-rotate-animated={isRotateAnimated ? isRotateAnimated : false}
+                data-mobile-scale={mobileScale}
         >
             <picture {...props} ref={el} >
                 <source

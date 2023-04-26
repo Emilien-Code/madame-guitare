@@ -35,7 +35,7 @@ const parallaxAnimation = (scroll) => {
                     scrollValueY[index] += image.dataset.parallaxSpeedY * scroll / 3
                     scrollValueX[index] += image.dataset.parallaxSpeed * scroll / 3
                     scrollValueR[index] += image.dataset.rotate * scroll / 3
-                    image.style.transform = `${image.dataset.isRotateAnimated=="true" ? `rotateZ(${scrollValueR[index]}deg)`: ""} ${image.dataset.rotate != 0 || image.dataset.rotateZ != 0 ? `rotateZ(${image.dataset.rotateZ}deg) rotateY(${image.dataset.rotate}deg)` : ""} translate(${scrollValueX[index]}px, ${scrollValueY[index]}px) scale(${image.dataset.scale})`
+                    image.style.transform = `${image.dataset.isRotateAnimated=="true" ? `rotateZ(${scrollValueR[index]}deg)`: ""} ${image.dataset.rotate != 0 || image.dataset.rotateZ != 0 ? `rotateZ(${image.dataset.rotateZ}deg) rotateY(${image.dataset.rotate}deg)` : ""} translate(${scrollValueX[index]}px, ${scrollValueY[index]}px) scale(${image.dataset.mobileScale && window.innerWidth < 768 ? image.dataset.mobileScale * image.dataset.scale : image.dataset.scale})`
                     
                 }
 

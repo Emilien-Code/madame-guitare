@@ -85,6 +85,7 @@ const Sea = () => {
                             images={[fishPng, fishPng, fishWebp, fishWebp ]}
                             poster={poster}
                             lazy={true}
+                            mobileScale={0.5}
                             alt="Poisson 1 du ban 1"/>
                     <Picture speed={0.1}
                             parallax={true}
@@ -93,6 +94,7 @@ const Sea = () => {
                             images={[fishPng, fishPng, fishWebp, fishWebp ]}
                             poster={poster}
                             lazy={true}
+                            mobileScale={0.5}
                             alt="Poisson 2 du ban 1"/>
 
                     <Picture speed={0.08}
@@ -102,6 +104,7 @@ const Sea = () => {
                             images={[fishPng, fishPng, fishWebp, fishWebp ]}
                             poster={poster}
                             lazy={true} 
+                            mobileScale={0.5}
                             alt="Poisson 3 du ban 1"/>
 
                     <Picture speed={0.12}
@@ -111,6 +114,7 @@ const Sea = () => {
                             images={[fishPng, fishPng, fishWebp, fishWebp ]} 
                             poster={poster} 
                             lazy={true} 
+                            mobileScale={0.5}
                             alt="Poisson 4 du ban 1"/>
 
                     <Picture speed={0.17}
@@ -120,6 +124,7 @@ const Sea = () => {
                             images={[fishPng, fishPng, fishWebp, fishWebp ]} 
                             poster={poster} 
                             lazy={true} 
+                            mobileScale={0.5}
                             alt="Poisson 5 du ban 1"/>
 
                     <Picture speed={0.06}
@@ -129,6 +134,7 @@ const Sea = () => {
                             images={[fishPng, fishPng, fishWebp, fishWebp ]}
                             poster={poster} 
                             lazy={true} 
+                            mobileScale={0.5}
                             alt="Poisson 6 du ban 1"/>
 
 
@@ -141,6 +147,7 @@ const Sea = () => {
                             images={[fishPng, fishPng, fishWebp, fishWebp ]} 
                             poster={poster} 
                             lazy={true} 
+                            mobileScale={0.5}
                             alt="Poisson 1 du ban 2"/>
                     <Picture scale={0.7} 
                             parallax={true} 
@@ -150,6 +157,7 @@ const Sea = () => {
                             images={[fishPng, fishPng, fishWebp, fishWebp ]} 
                             poster={poster} 
                             lazy={true} 
+                            mobileScale={0.5}
                             alt="Poisson 4 du ban 2"/>
                     <Picture scale={0.5} 
                             parallax={true} 
@@ -159,6 +167,7 @@ const Sea = () => {
                             images={[fishPng, fishPng, fishWebp, fishWebp ]} 
                             poster={poster} 
                             lazy={true} 
+                            mobileScale={0.5}
                             alt="Poisson 4 du ban 2"/>
 
 
@@ -169,6 +178,7 @@ const Sea = () => {
                             images={[raiePng, raiePng, raieWebp, raieWebp ]} 
                             poster={poster} 
                             lazy={true} 
+                            mobileScale={0.5}
                             alt="Raie 1"/>
                     <Picture scale={0.5} 
                             parallax={true} 
@@ -177,6 +187,7 @@ const Sea = () => {
                             images={[raiePng, raiePng, raieWebp, raieWebp ]} 
                             poster={poster} 
                             lazy={true} 
+                            mobileScale={0.5}
                             alt="Raie 2"/>
 
                     <Picture parallax={true} 
@@ -184,6 +195,7 @@ const Sea = () => {
                             refClass="medusa-1"
                             images={[medusaPng, medusaPng, medusaWebp, medusaWebp ]}
                             poster={poster}
+                            mobileScale={0.5}
                             lazy={true}
                             alt="Méduse 1"/>
                     <Picture scale={0.7} 
@@ -193,7 +205,8 @@ const Sea = () => {
                             refClass="medusa-2"
                             images={[medusaPng, medusaPng, medusaWebp, medusaWebp ]}
                             poster={poster}
-                            lazy={true} 
+                            lazy={true}
+                            mobileScale={0.5}
                             alt="Méduse 2"/>
 
 
@@ -210,7 +223,7 @@ const Sea = () => {
                             alt="background "/>
  {/* POISSONS */}
 
-                    <Picture scale={0.5} parallax={true}  rotate={180} speed={0.15} refClass="ban-2 fish-2" images={[fishPng, fishPng, fishWebp, fishWebp ]} poster={poster} lazy={true} alt="poisson "/>
+                    <Picture scale={0.5} mobileScale={0.5} parallax={true}  rotate={180} speed={0.15} refClass="ban-2 fish-2" images={[fishPng, fishPng, fishWebp, fishWebp ]} poster={poster} lazy={true} alt="poisson "/>
                     <Picture refClass="decore" images={[lightPng, lightPng, lightWebp, lightWebp ]} poster={poster} lazy={true} alt="background "/>
                 </div>
         </section>
