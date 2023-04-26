@@ -20,12 +20,8 @@ import SoundIcon from "../components/atoms/SoundIcon"
 	isHorizontal={true}
 >
 	<main class="emi-index-main">
-		<audio autoplay>
-			<source src={mp3} type="audio/mp3">
-		  Your browser does not support the audio element.
-		  </audio>
 		<div class="scroll-container">
-			<SoundIcon client:load/>
+			<SoundIcon client:only/>
 			<Loader client:load/>
 			<Particle client:load/>
 			<InstrumentModale client:load />
