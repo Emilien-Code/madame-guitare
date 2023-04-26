@@ -53,6 +53,12 @@ const Sea = () => {
                 // console.log(h)
                 // console.log(window.innerHeight)
                 document.querySelector(".emi-sea").style.width = `${window.innerWidth + h}px`
+                window.addEventListener("resize", ()=>{
+                        const h2 = getRectangle(document.querySelector(".emi-sea .decore")).height
+                        // console.log(h)
+                        // console.log(window.innerHeight)
+                        document.querySelector(".emi-sea").style.width = `${window.innerWidth + h2}px`
+                })
         }, 100)
     },[])
     
