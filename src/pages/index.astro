@@ -12,6 +12,7 @@ import Loader from '../components/layouts/Loader';
 import Particle from '../components/atoms/particle/particle';
 import mp3 from "../../public/In_A_World_Of_Natural_Wonder.mp3"
 import SoundIcon from "../components/atoms/SoundIcon"
+import Map from '../components/molecules/Map';
 ---
 
 <Layout 
@@ -22,7 +23,8 @@ import SoundIcon from "../components/atoms/SoundIcon"
 	<main class="emi-index-main">
 		<div class="scroll-container">
 			<SoundIcon client:only/>
-			<Loader client:load/>
+			<Map client:load/>
+			<!-- <Loader client:load/> -->
 			<Particle client:load/>
 			<InstrumentModale client:load />
 			<Intro/>
