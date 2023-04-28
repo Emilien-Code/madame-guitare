@@ -10,7 +10,21 @@ main {
     }  
 
     form{
-
+        &.sent{
+            align-items: center;
+            h1{
+                position: relative;
+                transform: translate(0);
+                margin-right: 0;
+            }
+            p{
+                margin-bottom: 56px;
+                font-size: 16px;
+            }
+            a{
+                margin-bottom: 24px;
+            }
+        }
         h1{
 
             margin: 64px 0;
