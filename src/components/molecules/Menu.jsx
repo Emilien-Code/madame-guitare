@@ -7,6 +7,7 @@ const Menu = () => {
 
     React.useEffect(()=>{
         if(isMenuOpen){
+            // window.lenis.stop()
 
             const links = document.querySelectorAll("a.link")
             
@@ -20,7 +21,19 @@ const Menu = () => {
                 }, 300 + index*100)
 
             })
-        } 
+        }
+
+
+        setTimeout(()=>{
+            
+            window.lenis.on("scroll", (e) => {
+                console.log(e.progress)
+                if(e.progress >= 0.99){
+                    setIsMenuOpen(true)
+                }
+            })
+            
+        },500)
     }, [isMenuOpen])
     return (
         <div className={`menu ${ isMenuOpen ? "open" : "" }`}>
