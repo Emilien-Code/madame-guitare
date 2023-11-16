@@ -12,6 +12,10 @@ const SoundIcon = () => {
             audio.play();
             audio.volume = 0.3
         })
+        document.addEventListener("sound" , () => {
+            audio.play();
+            audio.volume = 0.3
+        })
     }, [])
     React.useEffect(()=>{
         if(isSound){

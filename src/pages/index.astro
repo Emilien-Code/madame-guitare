@@ -24,7 +24,7 @@ import Map from '../components/molecules/Map';
 		<div class="scroll-container">
 			<SoundIcon client:only/>
 			<Map client:load/>
-			<!-- <Loader client:load/> -->
+			<Loader client:load/>
 			<Particle client:load/>
 			<InstrumentModale client:load />
 			<Intro/>
@@ -38,6 +38,6 @@ import Map from '../components/molecules/Map';
 		</div>
 	</main>
 	<script>
-		document.querySelector("audio").volume = 0.3
+		// document.querySelector("audio").volume = 0.3
 	</script>
 </Layout>

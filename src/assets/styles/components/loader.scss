@@ -6,7 +6,6 @@
     position: absolute;
     left: 0;
     z-index: 100;
-    cursor: wait;
     .cache  {
         position: absolute;
         background-color: #060606DA;
@@ -46,16 +45,28 @@
 
         }
     }
-    h1, p{
+    .title_button_container, p{
         max-width: 90%;
         position: absolute;
         left: 50%;
     }
-    h1{
+    .title_button_container{
         width: 815px;
         transform: translate(-50%, -50%);
         top: 50%;
         text-align: center;
+        h1{
+            transform: translateY(-50px);
+        }
+        button{
+            margin-top: 10px;
+            padding: 12px 32px;
+            border-radius: 64px;
+            background-color: transparent;
+            border: solid white 1px;
+            color: white;
+
+        }
     }
     p{
         bottom: 5%;
