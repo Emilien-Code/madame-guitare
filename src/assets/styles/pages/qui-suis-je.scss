@@ -156,21 +156,35 @@ main{
         }
     }
     @include mq("tablet", max){
-        picture{
+        .branch1,.branchRight,.branchLeft{
             display: none!important;
+        }
+        .bigbranch{
+            picture{display : none}
         }
         section{
             padding: 56px;
             height: 50vh!important;
             p{
                 transform: translate(0)!important;
-                position: relative!important;
+                position: static!important;
                 width: 100%!important;
                 max-width: 100vw!important;
                 top: 0;
                 left: 0;
                 right: 0!important;
             }
+            // &:last-of-type{
+                // margin-bottom: 100px;
+            // }
         }
     }
 }   
+
+
+
+p{
+    @include mq("tablet", max){
+        position: static!important;
+    }
+}
