@@ -10,7 +10,7 @@ const From = () => {
         
         if(true){     
 
-            fetch("/api/contact", {
+            fetch("/.netlify/functions/contact", {
             	method: "POST",
             	body: JSON.stringify({
             		mail: document.querySelector('input[name="mail"]').value,
