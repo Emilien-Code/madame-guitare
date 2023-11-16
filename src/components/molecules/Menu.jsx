@@ -27,8 +27,9 @@ const Menu = () => {
         setTimeout(()=>{
             
             window.lenis.on("scroll", (e) => {
-                console.log(e.progress)
-                if(e.progress >= 0.99){
+                console.log(e.progress, e.direction == 1)
+                if(e.progress >= 0.99 && e.direction == 1){
+                    if(window.innerWidth > 767 || window.location.pathname === "/")
                     setIsMenuOpen(true)
                 }
             })
