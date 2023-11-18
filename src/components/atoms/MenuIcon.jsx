@@ -3,7 +3,6 @@ import "../../assets/styles/components/molecules/menuIcon.scss"
 const Menu = (data) => {
     const { isMenuOpen, setIsMenuOpen } = data;
     const c = () => {
-        console.log("salut");
         setIsMenuOpen(!isMenuOpen);
     }
     return (
