@@ -1,7 +1,8 @@
 import React from "react";
 import useSmoothScroll from "../../assets/scripts/hooks/useSmoothScroll";
 import parallaxAnimation from "../../assets/scripts/utils/parallaxesAnimation";
-const SmoothScroll = ({isHorizontal})=>{
+const SmoothScroll = (props)=>{
+    const {isHorizontal} = props
     const scroll = useSmoothScroll(isHorizontal ? "horizontal" : "vertical");
     React.useEffect(() => {
       scroll ? scroll.start() : ""

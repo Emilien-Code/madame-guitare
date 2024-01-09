@@ -1,5 +1,4 @@
 import React from "react"
-import map from "../../assets/images/map/map.png"
 import "../../assets/styles/components/molecules/map.scss"
 const coord = [{
     x: 2,
@@ -98,7 +97,7 @@ const Map = () => {
                 </defs>
             </svg>
         </div>
-        <img src={map} alt="mini map" />
+        <img src="/images/map/map.png" alt="mini map" />
     </div>
     )
 }

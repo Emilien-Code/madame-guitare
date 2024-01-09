@@ -1,25 +1,25 @@
 import React from "react";
-import bgWebp from "../../assets/images/sea/bg.webp";
-import bgPng from "../../assets/images/sea/bg.jpg";
-import rockWebp from "../../assets/images/sea/rock.webp";
-import rockPng from "../../assets/images/sea/rock.png";
-import particlesWebp from "../../assets/images/sea/particles.webp";
-import particlesPng from "../../assets/images/sea/particles.png";
-import bottomWebp from "../../assets/images/sea/bottom.webp";
-import bottomPng from "../../assets/images/sea/bottom.png";
-import lightPng from "../../assets/images/sea/light.png"
-import lightWebp from "../../assets/images/sea/light.webp"
+const bgWebp = "/images/sea/bg.webp";
+const bgPng = "/images/sea/bg.jpg";
+const rockWebp = "/images/sea/rock.webp";
+const rockPng = "/images/sea/rock.png";
+const particlesWebp = "/images/sea/particles.webp";
+const particlesPng = "/images/sea/particles.png";
+const bottomWebp = "/images/sea/bottom.webp";
+const bottomPng = "/images/sea/bottom.png";
+const lightPng = "/images/sea/light.png"
+const lightWebp = "/images/sea/light.webp"
 
-import fishPng from "../../assets/images/sea/fish.png"
-import fishWebp from "../../assets/images/sea/fish.webp"
+const fishPng = "/images/sea/fish.png"
+const fishWebp = "/images/sea/fish.webp"
 
-import medusaPng from "../../assets/images/sea/medusa.png"
-import medusaWebp from "../../assets/images/sea/medusa.webp"
+const medusaPng = "/images/sea/medusa.png"
+const medusaWebp = "/images/sea/medusa.webp"
 
-import raiePng from "../../assets/images/sea/raie.png"
-import raieWebp from "../../assets/images/sea/raie.webp"
+const raiePng = "/images/sea/raie.png"
+const raieWebp = "/images/sea/raie.webp"
 
-import poster from "../../assets/images/poster.png";
+const poster = "/images/poster.png";
 
 import Picture from "../atoms/Picture/Picture";
 import Transition from "./Transition.astro"

@@ -1,27 +1,19 @@
 ---
-import bgWebp from "../../assets/images/introduction/bg.webp";
-import bgPng from "../../assets/images/introduction/bg.png"
 
-import treeWebp from "../../assets/images/introduction/Tree.webp";
-import treePng from "../../assets/images/introduction/Tree.png"
+const plateform2Webp = "/images/introduction/platform_2.webp";
+const plateform2Png = "/images/introduction/platform_2.png"
 
-import plateform1Webp from "../../assets/images/introduction/platform_1.webp";
-import plateform1Png from "../../assets/images/introduction/platform_1.png"
+const mainPlatformWebp = "/images/introduction/main_platform.webp";
+const mainPlatformPng = "/images/introduction/main_platform.png"
 
-import plateform2Webp from "../../assets/images/introduction/platform_2.webp";
-import plateform2Png from "../../assets/images/introduction/platform_2.png"
+const peroquetsWebp = "/images/introduction/peroquay.webp"
+const peroquetsPng = "/images/introduction/peroquay.png"
 
-import mainPlatformWebp from "../../assets/images/introduction/main_platform.webp";
-import mainPlatformPng from "../../assets/images/introduction/main_platform.png"
-
-import peroquetsWebp from "../../assets/images/introduction/peroquay.webp"
-import peroquetsPng from "../../assets/images/introduction/peroquay.png"
-
-import butterflyWebp from "../../assets/images/introduction/butterfly.webp"
-import butterflyPng from "../../assets/images/introduction/butterfly.png"
+const butterflyWebp = "/images/introduction/butterfly.webp"
+const butterflyPng = "/images/introduction/butterfly.png"
 
 
-import poster from "../../assets/images/poster.png"
+let poster = "/images/poster.png"
 
 
 
@@ -35,9 +27,9 @@ import Bubble from "../atoms/bubble/bubble.astro";
 <section class="emi-introduction">
     <Bubble type="button" text="Madame Guitare"/>
     
-    <Picture refClass="decore"images={[bgPng, bgPng, bgWebp, bgWebp ]} poster={poster} lazy={false} alt="background "  client:load />
-    <Picture speed={-0.05} parallax={true} refClass="decore"images={[treePng, treePng, treeWebp, treeWebp ]} poster={poster} lazy={false} alt="background "  client:load />
-    <Picture parallax={true} speed={-0.1} refClass="decore"images={[plateform1Png, plateform1Png, plateform1Webp, plateform1Webp ]} poster={poster} lazy={false} alt="background "  client:load />
+    <Picture refClass="decore"images={['/images/introduction/bg.png', "/images/introduction/bg.png", '/images/introduction/bg.webp', '/images/introduction/bg.webp' ]} poster={poster} lazy={false} alt="background "  client:load />
+    <Picture speed={-0.05} parallax={true} refClass="decore"images={['/images/introduction/Tree.png', '/images/introduction/Tree.png', '/images/introduction/Tree.webp', '/images/introduction/Tree.webp' ]} poster={poster} lazy={false} alt="background "  client:load />
+    <Picture parallax={true} speed={-0.1} refClass="decore"images={['/images/introduction/platform_1.png', '/images/introduction/platform_1.png', "/images/introduction/platform_1.webp", '/images/introduction/platform_1.webp' ]} poster={poster} lazy={false} alt="background "  client:load />
     <Picture parallax={true} speed={-0.15} refClass="decore"images={[plateform2Png, plateform2Png, plateform2Webp, plateform2Webp ]} poster={poster} lazy={false} alt="background "  client:load />
     <Picture parallax={true} speed={-0.2} rotateZ="20" scale="0.8" refClass="parrot-2" images={[peroquetsPng, peroquetsPng, peroquetsWebp, peroquetsWebp ]} poster={poster} lazy={false} alt="background"  client:load />
     <Picture parallax={true} speed={-0.2} refClass="decore"images={[mainPlatformPng, mainPlatformPng, mainPlatformWebp, mainPlatformWebp ]} poster={poster} lazy={false} alt="background "  client:load />

@@ -28,7 +28,7 @@ const { title, description, isHorizontal } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<SmoothScroll isHorizontal={isHorizontal} client:load/>
+		<SmoothScroll isHorizontal={isHorizontal} client:only/>
 		<Menu client:load/>
 		<slot />
 	</body>
