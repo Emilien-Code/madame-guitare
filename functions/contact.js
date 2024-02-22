@@ -31,7 +31,7 @@ exports.handler = async (event, context) => {
           },
           To: [
             {
-              Email: "emilien.ginko@gmail.com",
+              Email: "marie.doerler@gmail.com",
               Name: "vous",
             },
           ],
