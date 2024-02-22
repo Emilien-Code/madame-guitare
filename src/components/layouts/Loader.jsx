@@ -36,7 +36,7 @@ const Loader = ()=>{
                     }, 1000)
                 }}>Entrer</button>
             </div>
-            <p>Designé et développé par Ēmi </p>
+            <p>Designé et développé par <a href="https://emi.studio" target="_blank">Ēmi</a> </p>
         </div>
     }
     return <></>

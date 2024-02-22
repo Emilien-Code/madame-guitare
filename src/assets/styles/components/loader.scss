@@ -75,4 +75,12 @@
         font-family: "Switzer-Regular";
         font-size: 20px;
     }
+    a{
+        color: #fff;   
+        text-decoration: underline;
+        &:visited{
+            color: #fff;   
+
+        }
+    }
 }
