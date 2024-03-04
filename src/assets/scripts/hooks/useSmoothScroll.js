@@ -15,7 +15,7 @@ function useSmoothScroll(dir) {
       // wrapper: document.querySelector("body"), // element that has overflow
       mouseMultiplier: 1,
       smoothTouch: true,
-      touchMultiplier: 2,
+      touchMultiplier: 4,
       infinite: false,
       wrapper: document.querySelector("main"),
       content: document.querySelector(".scroll-container"),
@@ -28,7 +28,7 @@ function useSmoothScroll(dir) {
       // wrapper: document.querySelector("body"), // element that has overflow
       mouseMultiplier: 1,
       smoothTouch: true,
-      touchMultiplier: 2,
+      touchMultiplier: 4,
       infinite: false,
     })
     
